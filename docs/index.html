@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raport Zilnic Commodities - 25.03.2026</title>
+    <style>
+        :root {
+            --bg: #1a1a2e;
+            --card-bg: #16213e;
+            --accent: #e94560;
+            --gold: #ffd700;
+            --silver: #c0c0c0;
+            --green: #00b894;
+            --red: #e74c3c;
+            --text: #eee;
+            --text-muted: #a0a0b0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 30px;
+        }
+        header h1 { font-size: 2em; color: var(--gold); }
+        header .date { color: var(--text-muted); margin-top: 5px; font-size: 1.1em; }
+        header .sources {
+            color: var(--text-muted);
+            font-size: 0.85em;
+            margin-top: 10px;
+        }
+        header .sources a { color: var(--accent); text-decoration: none; }
+        header .sources a:hover { text-decoration: underline; }
+        .commodity-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--gold);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .commodity-card.silver { border-left-color: var(--silver); }
+        .commodity-card.palladium { border-left-color: #b8a9c9; }
+        .commodity-card.oil { border-left-color: #e67e22; }
+        .commodity-card.gas { border-left-color: #3498db; }
+        .commodity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .commodity-name { font-size: 1.5em; font-weight: bold; }
+        .commodity-price {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .price-up { color: var(--green); }
+        .price-down { color: var(--red); }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            background: rgba(255,255,255,0.05);
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .stat-label { color: var(--text-muted); font-size: 0.85em; }
+        .stat-value { font-size: 1.2em; font-weight: bold; margin-top: 4px; }
+        .news-section { margin-top: 20px; }
+        .news-section h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .news-item {
+            background: rgba(255,255,255,0.03);
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            border-left: 2px solid var(--accent);
+        }
+        .topic-item {
+            padding: 8px 15px;
+            margin-bottom: 6px;
+            font-size: 0.9em;
+            color: var(--text-muted);
+            border-left: 2px solid var(--gold);
+            background: rgba(255,215,0,0.03);
+            border-radius: 0 6px 6px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .commodity-header { flex-direction: column; align-items: flex-start; }
+            .commodity-price { font-size: 1.5em; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RAPORT ZILNIC COMMODITIES</h1>
+            <div class="date">25.03.2026</div>
+            <div class="sources">
+                Surse:
+                <a href="https://www.investing.com/">Investing.com</a> |
+                <a href="https://www.marketwatch.com/">MarketWatch</a> |
+                <a href="https://www.bloomberg.com/europe">Bloomberg</a> |
+                <a href="https://www.reuters.com/">Reuters</a>
+            </div>
+        </header>
+
+        
+        <div class="commodity-card ">
+            <div class="commodity-header">
+                <span class="commodity-name">XAU - USD (Gold)</span>
+                <span class="commodity-price price-down">4388.19 $</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Range ieri</div>
+                    <div class="stat-value">4099.55 - 4536.46 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare sesiune</div>
+                    <div class="stat-value price-down">-102.96 $ (2.29%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare zilnica (de la ora 00)</div>
+                    <div class="stat-value price-up">+0.0 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Suport / Rezistenta</div>
+                    <div class="stat-value">4214.98 $ / 4651.89 $</div>
+                </div>
+            </div>
+
+            
+            <div class="news-section"><h3>Teme de interes zilnic</h3><div class="topic-item">Stire despre Gold, rezerve bancare ale bancilor centrale, companii care extrag. PBoC a extins achizitiile de aur pentru a 15-a luna consecutiva in ianuarie. Banca Nationala a Poloniei a fost cel mai mare cumparator in 2025, adaugand 102 tone</div><div class="topic-item">Bancile centrale detin acum mai multe rezerve in aur decat in obligatiuni ale Trezoreriei SUA (conform WisdomTree). Cererea ramane ridicata pe fondul tensiunilor geopolitice din Orientul Mijlociu</div><div class="topic-item">Pretul aurului a depasit $5,000/uncie in ianuarie 2026, atingand un maxim istoric de $5,589.38. J.P. Morgan prognozeaza $5,055/uncie pana la sfarsitul lui 2026</div></div>
+        </div>
+
+        <div class="commodity-card silver">
+            <div class="commodity-header">
+                <span class="commodity-name">XAG - USD (Silver)</span>
+                <span class="commodity-price price-up">69.28 $</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Range ieri</div>
+                    <div class="stat-value">60.98 - 70.76 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare sesiune</div>
+                    <div class="stat-value price-up">+1.49 $ (2.2%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare zilnica (de la ora 00)</div>
+                    <div class="stat-value price-up">+0.13 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Suport / Rezistenta</div>
+                    <div class="stat-value">62.26 $ / 72.04 $</div>
+                </div>
+            </div>
+
+            
+            <div class="news-section"><h3>Teme de interes zilnic</h3><div class="topic-item">Stire despre Silver, rezerve bancare ale bancilor centrale, companii care extrag. Argintul a scazut cu aproape 50% de la maximele din februarie si cu peste 27% doar in martie, pe fondul cresterii randamentelor obligatiunilor</div><div class="topic-item">Pretul argintului a revenit la $70 dupa declaratiile lui Trump privind "discutii bune si productive" cu Iranul, stabilizand pietele</div><div class="topic-item">Indicatorii tehnici arata un semnal "Strong Sell" pe termen scurt. Perspectiva ramane incerta, influentata de piata energiei</div></div>
+        </div>
+
+        <div class="commodity-card palladium">
+            <div class="commodity-header">
+                <span class="commodity-name">Palladium</span>
+                <span class="commodity-price price-up">1452.25 $</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Range ieri</div>
+                    <div class="stat-value">1392.0 - 1480.0 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare sesiune</div>
+                    <div class="stat-value price-up">+7.05 $ (0.49%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare zilnica (de la ora 00)</div>
+                    <div class="stat-value price-up">+7.05 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Suport / Rezistenta</div>
+                    <div class="stat-value">1398.13 $ / 1486.13 $</div>
+                </div>
+            </div>
+
+            
+            <div class="news-section"><h3>Teme de interes zilnic</h3><div class="topic-item">Stire despre Palladium, rezerve bancare ale bancilor centrale, companii care extrag. Paladiul a urcat peste $1,800/uncie in februarie, dupa o scadere la $1,573</div><div class="topic-item">Ingrijorari pe partea de oferta din cauza revizuirii acordului comercial Canada-SUA-Mexic si amenintarilor tarifare de 50%, Canada fiind un furnizor cheie global de paladiu</div><div class="topic-item">Dupa atingerea unui minim de 7 ani la $31.74/gram la inceputul lui 2025, paladiul a recuperat 74.48% pe parcursul anului 2025</div></div>
+        </div>
+
+        <div class="commodity-card oil">
+            <div class="commodity-header">
+                <span class="commodity-name">Crude Oil (WTI)</span>
+                <span class="commodity-price price-down">88.67 $</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Range ieri</div>
+                    <div class="stat-value">84.59 - 101.66 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare sesiune</div>
+                    <div class="stat-value price-down">-9.56 $ (9.73%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare zilnica (de la ora 00)</div>
+                    <div class="stat-value price-down">-2.94 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Suport / Rezistenta</div>
+                    <div class="stat-value">87.99 $ / 105.06 $</div>
+                </div>
+            </div>
+
+            
+            <div class="news-section"><h3>Teme de interes zilnic</h3><div class="topic-item">Stire despre conflicte in tarile arabe. Transporturile de petrol prin Stramtoarea Hormuz au scazut de la ~20 mb/zi la un fir, tarile din Golf reducand productia cu cel putin 10 mb/zi. Brent a atins $120/bbl inainte de a scadea la ~$92</div><div class="topic-item">OPEC+ a decis pe 1 martie 2026 o crestere a productiei cu 206,000 barili/zi pentru aprilie. Arabia Saudita a crescut productia cu 640,000 b/zi - cea mai mare crestere din iunie. OPEC a pompat 29.52 milioane barili/zi</div><div class="topic-item">In fiecare miercuri se publica inventarele de petrol ale SUA (Crude Oil Inventories). Ultima raportare (13 martie): stocuri +6.2 mil barili la 449.3 mil bbl, ~1% sub media pe 5 ani. Urmatorul raport: 25 martie 2026</div><div class="topic-item">Tarile IEA au decis eliberarea a 400 milioane barili din rezervele de urgenta pentru a atenua impactul intreruperilor de aprovizionare</div></div>
+        </div>
+
+        <div class="commodity-card gas">
+            <div class="commodity-header">
+                <span class="commodity-name">Nat Gas</span>
+                <span class="commodity-price price-down">2.9 $</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-label">Range ieri</div>
+                    <div class="stat-value">2.8 - 3.07 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare sesiune</div>
+                    <div class="stat-value price-down">-0.17 $ (5.54%)</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Schimbare zilnica (de la ora 00)</div>
+                    <div class="stat-value price-up">+0.0 $</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Suport / Rezistenta</div>
+                    <div class="stat-value">2.89 $ / 3.16 $</div>
+                </div>
+            </div>
+
+            
+            <div class="news-section"><h3>Teme de interes zilnic</h3><div class="topic-item">Stire despre conflicte in tarile arabe. Rachetele iraniene au avariat Ras Laffan, cel mai mare hub LNG din lume (~20% din oferta globala). Pretul gazului TTF in Europa a crescut cu 32% peste noapte</div><div class="topic-item">In fiecare JOI se publica inventarele de gaz ale SUA (US Natural Gas Storage). Ultima raportare (6 martie): stocuri la 1,848 Bcf, scadere de 38 Bcf. Nivelul este cu 141 Bcf peste anul trecut, dar cu 17 Bcf sub media pe 5 ani</div><div class="topic-item">Productia de gaz natural in SUA este asteptata sa creasca la 118 Bcf/zi in 2026 si 121 Bcf/zi in 2027 (fata de 116 Bcf/zi in 2025). EIA prognozeaza pretul Henry Hub la ~$3.80/MMBtu in medie pentru 2026</div><div class="topic-item">Preturile Henry Hub raman izolate de presiunile inflationiste globale cauzate de conflictul din Orientul Mijlociu, ramanand in jurul a $3/MMBtu</div></div>
+        </div>
+
+        <footer>
+            Raport generat automat - 25.03.2026<br>
+            Datele sunt cu titlu informativ si nu constituie sfaturi de investitii.
+        </footer>
+    </div>
+</body>
+</html>
